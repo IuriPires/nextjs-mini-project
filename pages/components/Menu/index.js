@@ -11,6 +11,9 @@ function Menu() {
             </ImageWrapper>
 
             <MenuList>
+                <Link href="/">
+                    <li>Home</li>
+                </Link>
                 <Link href="/about-us">
                     <li>About Us</li>
                 </Link>
