@@ -1,21 +1,15 @@
-import { useEffect } from 'react';
 import { server } from './api/graphql';
 
 function AboutUs({ aboutMe }) {
-  
-  useEffect(() => {
-    letsConsole();
-  }, []);
-
   return (
     <div style={{ marginTop: '120px' }}>
       <ul>
-        { aboutMe.map((user) => (
-          <>
+        {aboutMe.map((user) => (
+          <ul key={user.email}>
             <li>Name: {user.name}</li>
             <li>Email: {user.email}</li>
             <li>Age: {user.age}</li>
-          </>
+          </ul>
         ))}
       </ul>
     </div>
