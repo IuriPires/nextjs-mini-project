@@ -1,6 +1,6 @@
 import '../styles/global.css'
 
-import Menu from './components/Menu';
+import Menu from '../components/Menu';
 
 function App({ Component, pageProps }) {
     return (

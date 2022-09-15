@@ -3,7 +3,7 @@ import { Container, ImageWrapper, MenuList } from './styles';
 import Image from 'next/image'
 import Link from 'next/link'
 
-function Menu() {
+export default function Menu() {
     return (
         <Container>
             <ImageWrapper>
@@ -25,5 +25,3 @@ function Menu() {
         </Container>
     );
 }
-
-export default Menu;

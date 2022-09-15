@@ -1,12 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Link from 'next/link';
 import Head from 'next/head'
 
 import SSRProvider from 'react-bootstrap/SSRProvider';
 
-import Menu from './components/Menu';
-import Carousel from './components/Carousel';
+import Carousel from '../components/Carousel';
 
 export default function Home() {
   return (

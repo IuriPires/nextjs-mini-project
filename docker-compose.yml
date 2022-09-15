@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    nextjs-blog: 
+      image: docker-nextjs-blog-dev
+      build: .
+      ports:
+        - 3000:3000
+      volumes:
+        - ./pages:/nextjs-blog/pages
+        - ./public:/nextjs-blog/public
+        - ./styles:/nextjs-blog/styles
+        - ./components:/nextjs-blog/components
